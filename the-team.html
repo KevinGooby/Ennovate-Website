@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/ENNOVATE-favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+     <!-- HEADER/NAVBAR for ENNOVATE: Includes the logo, a link to the team, final comp, resources drive, and a button for portal-->
+    <div class="header">
+        <a href="/index.html"><img class="header-logo" src="assets/images/ENNOVATE-W.png" alt="The logo for UBC Ennovate"></a>
+        <div class="header-links">
+            <a class="header-link" href="/the-team.html">THE TEAM</a>
+            <a class="header-link" href="/final-comp.html">FINAL COMP</a>
+            <a class="header-link" target="_blank" href="https://alder-geology-41a.notion.site/Ennovate-Semester-2-Resources-f557846d718149418eae8b2a1f432f9f">RESOURCES</a>
+            <a class="header-link" href="/portal.html"><button class="header-button">PORTAL</button></a>
+        </div>
+
+    </div>
+
+
+    <div class="mobile-header">
+        <a href="/index.html"><img class="header-logo" src="assets/images/ENNOVATE-W.png" alt="The logo for UBC Ennovate"></a>
+        <div id="mobile-header-links">
+            <a class="mobile-header-link" href="/the-team.html">THE TEAM</a>
+            <a class="mobile-header-link" href="/final-comp.html">FINAL COMP</a>
+            <a class="mobile-header-link" target="_blank" href="https://alder-geology-41a.notion.site/Ennovate-Semester-2-Resources-f557846d718149418eae8b2a1f432f9f">RESOURCES</a>
+            <a class="mobile-header-link" href="/portal.html">PORTAL</a>
+        </div>
+
+        <a href="javascript:void(0);" class="mobile-icon" onclick="toggleMobileMenu()">
+            <img class="mobile-icon-button" src="assets/images/1024px-Hamburger_icon_white.svg.png">
+        </a>
+    </div>
+
+    <script>
+
+        // Toggles the mobile menu. Switches from display: block to display: none, and vice versa
+        function toggleMobileMenu() {
+            var links = document.getElementById("mobile-header-links");
+            if (links.style.display === "block") {
+                links.style.display = "none";
+            } else {
+                links.style.display = "block";
+            }
+        }
+    </script>
+
+    <div class="team-members section">
+
+        <div class="member block">
+            <h1 class="person-name">Tiya Tanaka</h1>
+            <p class="person-title">Project Director</p>
+            <div class="person-gradient"></div>
+            <img class="person-img" src="assets/team-members/Tiya-Tanaka.jpg">
+        </div>
+
+        <div class="member block">
+            <h1 class="person-name">Euna Ao</h1>
+            <p class="person-title">Project Director</p>
+            <div class="person-gradient"></div>
+            <img class="person-img" src="assets/team-members/Euna-Ao.jpg">
+        </div>
+
+        <div class="member block">
+            <h1 class="person-name">Topher So</h1>
+            <p class="person-title">Logistics Manager</p>
+            <div class="person-gradient"></div>
+            <img class="person-img" src="assets/team-members/Topher-So.jpg">
+        </div>
+
+        <div class="member block">
+            <h1 class="person-name">Patrick Kim</h1>
+            <p class="person-title">Logistics Manager</p>
+            <div class="person-gradient"></div>
+            <img class="person-img" src="assets/team-members/Patrick-Kim.jpg">
+        </div>
+
+        <div class="member block">
+            <h1 class="person-name">Arisha Ahmed</h1>
+            <p class="person-title">Mentorship Manager</p>
+            <div class="person-gradient"></div>
+            <img class="person-img" src="assets/team-members/Arisha.jpg">
+        </div>
+
+        <div class="member block">
+            <h1 class="person-name">Carina Koo</h1>
+            <p class="person-title">Internal Manager</p>
+            <div class="person-gradient"></div>
+            <img class="person-img" src="assets/team-members/Carina-Koo.png">
+        </div>
+
+        <div class="member block">
+            <h1 class="person-name">Ashley Liu</h1>
+            <p class="person-title">External Manager</p>
+            <div class="person-gradient"></div>
+            <img class="person-img" src="assets/team-members/Ashley-Liu.jpg">
+        </div>
+
+        <div class="member block">
+            <h1 class="person-name">Kevin Gu</h1>
+            <p class="person-title">Technology Manager</p>
+            <div class="person-gradient"></div>
+            <img class="person-img" src="assets/team-members/Kevin-photo.jpg">
+        </div>
+
+
+        <div class="member block">
+            <h1 class="person-name">Kimi Ho</h1>
+            <p class="person-title">Content Creation Manager</p>
+            <div class="person-gradient"></div>
+            <img class="person-img" src="assets/team-members/Kimi-Ho.jpeg">
+        </div>
+
+        <div class="member block">
+            <h1 class="person-name">Khushi Dhand</h1>
+            <p class="person-title">Marketing Manager</p>
+            <div class="person-gradient"></div>
+            <img class="person-img" src="assets/team-members/Khushi-Dhand.jpg">
+        </div>
+
+        <div class="member block">
+            <h1 class="person-name">Amanda Sam</h1>
+            <p class="person-title">Ennovate Advisor</p>
+            <div class="person-gradient"></div>
+            <img class="person-img" src="assets/team-members/Amanda-Sam.jpg">
+        </div>
+
+        <div class="member block">
+            <h1 class="person-name">Ryu Watanabe</h1>
+            <p class="person-title">Ennovate Advisor</p>
+            <div class="person-gradient"></div>
+            <img class="person-img" src="assets/team-members/Ennovate-Filler.jpg">
+        </div>
+    </div>
+
+    <!-- Footer for the webpage: Includes links for email, social media as well as to Enactus -->
+    <footer>
+        <h2 class="wholesome-message" style="font-weight: 200;"> Made with love from the Ennovate Team ♥ </h2>
+        <div class="bottom-row">
+            <div class="social-media">
+                <a href="mailto:kevinxgu@gmail.com" target="_blank"><img class="social-media-link" src="assets/images/EMAIL-logo1.png"></a>
+                <a href="https://www.instagram.com/ennovateubc/" target="_blank"><img class="social-media-link" src="assets/images/IG-logo (1).png"></a>
+                <a href="https://www.facebook.com/ennovateubc/" target="_blank"><img class="social-media-link" src="assets/images/FB-logo.png"></a>
+            </div>
+            <a class="back-to-top" href="#top"><p>Return to the top</p></a>
+        </div>
+    </footer>
+</body>
+</html>

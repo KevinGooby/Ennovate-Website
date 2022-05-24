@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ennovate UBC</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/ENNOVATE-favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER/NAVBAR for ENNOVATE: Includes the logo, a link to the team, final comp, resources drive, and a button for portal-->
+    <div class="header">
+        <a href="#top"><img class="header-logo" src="assets/images/ENNOVATE-W.png" alt="The logo for UBC Ennovate"></a>
+        <div class="header-links">
+            <a class="header-link" href="/the-team.html">THE TEAM</a>
+            <a class="header-link" href="/final-comp.html">FINAL COMP</a>
+            <a class="header-link" target="_blank" href="https://alder-geology-41a.notion.site/Ennovate-Semester-2-Resources-f557846d718149418eae8b2a1f432f9f">RESOURCES</a>
+            <a class="header-link" href="/portal.html"><button class="header-button">PORTAL</button></a>
+        </div>
+    </div>
+
+    <div class="mobile-header">
+        <a href="#top"><img class="header-logo" src="assets/images/ENNOVATE-W.png" alt="The logo for UBC Ennovate"></a>
+        <div id="mobile-header-links">
+            <a class="mobile-header-link" href="/the-team.html">THE TEAM</a>
+            <a class="mobile-header-link" href="/final-comp.html">FINAL COMP</a>
+            <a class="mobile-header-link" target="_blank" href="https://alder-geology-41a.notion.site/Ennovate-Semester-2-Resources-f557846d718149418eae8b2a1f432f9f">RESOURCES</a>
+            <a class="mobile-header-link" href="/portal.html">PORTAL</a>
+        </div>
+
+        <a href="javascript:void(0);" class="mobile-icon" onclick="toggleMobileMenu()">
+            <img class="mobile-icon-button" src="assets/images/1024px-Hamburger_icon_white.svg.png">
+        </a>
+
+        <script>
+
+            // Toggles the mobile menu. Switches from display: block to display: none, and vice versa
+            function toggleMobileMenu() {
+                var links = document.getElementById("mobile-header-links");
+                if (links.style.display === "block") {
+                    links.style.display = "none";
+                } else {
+                    links.style.display = "block";
+                }
+            }
+        </script>
+    </div>
+
+    <!-- HERO SECTION: INCLUDES BACKGROUND + "Welcome to Ennovate" message -->
+    <div class="hero" id="top">
+        <img class="background-image" src="assets/images/ENNOVATE_BACKGROUND.jpg" alt="Background photo for UBC Ennovate">
+        <img class="background-mobile-image" src="assets/images/ENNOVATE-MOBILE-BACKGROUND.jpg" alt="Background photo for UBC Ennovate">
+        <div class="center-top-text">Welcome to</div>
+        <div class="center-Ennovate">E N N O V A T E</div>
+    </div>
+
+    <!-- Small blurb/introduction for what Ennovate is-->
+    <div class="introduction">
+        <h1 class="intro-header"><strong>Who are we?</strong></h1>
+        <p class="blurb">Ennovate is an entrepreneurship education project that focuses on empowering high school students
+            through interactive workshops based on product development, marketing, accounting, personal budgeting, and variety of soft skills.
+            <strong>We're a project brought to you by Enactus UBC!!</strong>
+        </p>
+    </div>
+
+    <!-- Small blurb/introduction for what Enactus is-->
+    <div class="introduction">
+        <h1 class="intro-header"><strong>What is Enactus UBC??</strong></h1>
+        <p class="blurb">Enactus is a global, student-led organization dedicated to enacting positive social change through the lens of entrepreneurship.
+             We crave to see improvements in the community, and are passionate facilitators who help make them happen. We know that together, we can and will make a 
+             difference this year and in future years to come.  Enactus UBC is home to a team of over 100 students who collaborate to develop unique projects to serve our campus and community, 
+             further driving the Enactus mission.
+        </p>
+    </div>
+
+
+    <!-- Beginning of semester statistics for semester 1, 2021/2022 chapter -->
+    <h1 class="intro-header" style="text-align: center;"><strong>Last semester...</strong></h1>
+
+    <div class="semester-stats">
+        <div class="semester-stat">
+            <div class="big-number">17</div>
+            <div class="stat">school businesses</div>
+        </div>
+        <div class="semester-stat">
+            <div class="big-number">5</div>
+            <div class="stat">cities in British Columbia</div>
+        </div>
+        <div class="semester-stat">
+            <div class="big-number">1000</div>
+            <div class="stat">people directly and indirectly impacted</div>
+        </div>
+        <div class="semester-stat">
+            <div class="big-number">$4,089.37</div>
+            <div class="stat">in net income for schools</div>
+        </div>
+    </div>
+
+    <!-- Rotating slideshow for the business that schools have founded/created -->
+    <div class="project-slideshow">
+        <p class="projects-blurb">Here are just a few of the amazing projects that schools have made. We're so excited to see 
+            what you'll create as well!</p>
+        <img class="school-project" src="assets/images/Slide1.jpeg">
+        <img class="school-project" src="assets/images/Slide2.jpeg">
+        <img class="school-project" src="assets/images/Slide3.jpeg">
+        <img class="school-project" src="assets/images/Slide4.jpeg">
+        <img class="school-project" src="assets/images/Slide5.jpeg">
+    </div>
+
+    <script>
+        var index = 0;
+        nextPhoto();
+
+        // Function that displays/gets the next photo in the cycle
+        function nextPhoto() {
+            let i;
+            let projects = document.getElementsByClassName("school-project");
+            for (i = 0; i < projects.length; i++) {
+                projects[i].style.display = "none";
+            }
+            index++;
+
+            if (index > projects.length) {
+                index = 1;
+            }
+            projects[index - 1].style.display = "block";
+            setTimeout(nextPhoto, 2000); // Changes the image every 2 seconds
+        }
+    </script>
+
+    <!-- Beginning of sponsors section for Ennovate -->
+    <div class="sponsors">
+        <h1 class="sponsor-header"><strong>Affiliated with...</strong></h1>
+        <div class="sponsor-logos">
+            <a target="_blank" href="https://enactusubc.ca"><img class="sponsor" src="assets/images/Enactus UBC.png"></a>
+            <img class="sponsor" style="max-width: 100px;" src="assets/images/ubc-logo.png">
+            <img class="sponsor" style="max-width: 100px;" src="assets/images/AMS-Logo-Square-o4hkwugu21b6jwb0jidkkle865qhdj550p6xw97ev4.png">
+            <img class="sponsor" src="assets/images/CPA-Logo.png">
+        </div>
+    </div>
+
+    <!-- Footer for the webpage: Includes links for email, social media as well as to Enactus -->
+    <footer>
+        <h2 class="wholesome-message" style="font-weight: 200;"> Made with love from the Ennovate Team ♥ </h2>
+        <div class="bottom-row">
+            <div class="social-media">
+                <a href="mailto:kevinxgu@gmail.com" target="_blank"><img class="social-media-link" src="assets/images/EMAIL-logo1.png"></a>
+                <a href="https://www.instagram.com/ennovateubc/" target="_blank"><img class="social-media-link" src="assets/images/IG-logo (1).png"></a>
+                <a href="https://www.facebook.com/ennovateubc/" target="_blank"><img class="social-media-link" src="assets/images/FB-logo.png"></a>
+            </div>
+            <a class="back-to-top" href="#top"><p>Return to the top</p></a>
+        </div>
+    </footer>
+    
+</body>
+</html>
